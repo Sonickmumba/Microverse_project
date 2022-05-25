@@ -1,27 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us</p>
 
-    <!--
+    <!-- form -->
 
-    Hello Camper!
+    <form action="" id="survey-form">
+      <label for="name" id="name-label">Name</label>
+      <input
+        type="text"
+        id="name"
+        required
+        placeholder="Enter yoour name"
+      /><br />
+      <label for="email" id="email-label">Email</label>
+      <input
+        type="email"
+        id="email"
+        required
+        placeholder="Enter your email"
+      /><br />
+      <label for="number" id="number-label">Number</label>
+      <input
+        type="number"
+        id="number"
+        min="11"
+        max="15"
+        placeholder="Enter your number"
+      />
+      <br />
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
+      <!-- select dropdown -->
+      <label for="dropdown">What option best describes your current role</label>
+      <select name="dropdown" id="dropdown">
+        <option value="" disabled selected>Select current role</option>
+        <option value="student">Student</option>
+        <option value="job">Full-time Job</option>
+        <option value="learner">Full-time Learner</option>
+        <option value="prefer">Prefer not to say</option>
+        <option value="other">other</option>
+      </select>
+      <br />
 
-    - The freeCodeCamp Team
+      <!-- radio buttons -->
+      <label for="definitely">
+        <input name="radio-options" type="radio" value="Definitely" />
+        Definitely</label
+      >
 
-    -->
-    <script  src="js/index.js"></script>
+      <label for="maybe">
+        <input name="radio-options" type="radio" value="Maybe" />
+        Maybe</label
+      >
+      <label for="not-sure">
+        <input name="radio-options" type="radio" value="Not-sure" />Not
+        sure</label
+      >
+      <br />
+
+      <!-- checkboxes -->
+      <label for=""
+        ><input type="checkbox" value="front-end projects" />Front-end
+        Projects</label
+      >
+      <br />
+      <label for=""
+        ><input type="checkbox" value="back-end projects" />Back-end
+        projects</label
+      >
+      <br />
+
+      <!-- textarea -->
+
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+
+      <input type="submit" id="submit" value="submit" />
+    </form>
+
     <p>Hello World, we are software developers!</p>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
